@@ -17,7 +17,7 @@ time_layer = np.zeros([2,10])
 time_total = np.zeros(10)
 
 for i in range(len(batchsize)):
-    time_total[i], layer, time_layer[:,i] = VGG16.predict(gpu = gpu,
+    time_total[i], layer, time_layer[:,i] = MLP.predict(gpu = gpu,
                                                           optimizer = opt,
                                                           batchsize = batchsize[i])
 #l_unique = layer.copy()
