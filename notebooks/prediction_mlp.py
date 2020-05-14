@@ -20,6 +20,8 @@ for i in range(len(batchsize)):
     time_total[i], layer, time_layer[:,i] = MLP.predict(gpu = gpu,
                                                           optimizer = opt,
                                                           batchsize = batchsize[i])
+    print ("time_total = " ,time_total[i])
+    
 #l_unique = layer.copy()
 #duplicates = [12,11,9,6]
 #for d in duplicates:
